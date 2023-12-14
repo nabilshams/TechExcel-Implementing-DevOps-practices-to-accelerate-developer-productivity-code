@@ -15,5 +15,5 @@ jobs:
       - name: Cowsays
         uses: mscoutermarsh/cowsays-action@master
         with:
-          text: "Ready for prod–ship it!"
-          color: "magenta"
+          text: 'Ready for prod–ship it!'
+          color: 'magenta'
