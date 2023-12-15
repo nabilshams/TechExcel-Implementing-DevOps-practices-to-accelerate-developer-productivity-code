@@ -3,7 +3,7 @@
 
 name: .NET
 env:
-  registryName: "registryName.azurecr.io"
+  registryName: "ntxjk7if2hkbimpnpreg.azurecr.io"
   repositoryName: "techboost/dotnetcoreapp"
   dockerFolderPath: "Application/src/RazorPagesTestSample"
   tag: github.run_number
