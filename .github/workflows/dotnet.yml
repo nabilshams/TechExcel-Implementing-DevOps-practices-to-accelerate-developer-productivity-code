@@ -34,8 +34,7 @@ jobs:
     - name: Test
       run: dotnet test ./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj --no-build --verbosity normal
 
-  deploy:
-    needs: [build]
+  docker-build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -43,5 +42,7 @@ jobs:
       run: docker login $registryName -u ${{ secrets.ACR_USERNAME }} -p ${{ secrets.ACR_PASSWORD }}
     - name: Docker Build
       run: docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath
+    - name: Docker Push
+      run: docker push $registryName/$repositoryName:$tag
   
   
