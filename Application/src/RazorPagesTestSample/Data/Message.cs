@@ -5,6 +5,7 @@ namespace RazorPagesTestSample.Data
     #region snippet1
     public class Message
     {
+        // testing the CI workflow
         public int Id { get; set; }
 
         [Required]
