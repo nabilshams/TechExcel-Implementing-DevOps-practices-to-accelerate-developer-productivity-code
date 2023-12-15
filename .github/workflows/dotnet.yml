@@ -53,12 +53,12 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-dev'
-        images: techboost/dotnetcoreapp:13
+        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:{tag}
 
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-test'
-        images: $registryName/$repositoryName:$tag
+        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:{tag}
 
     - uses: azure/webapps-deploy@v2
       with:
