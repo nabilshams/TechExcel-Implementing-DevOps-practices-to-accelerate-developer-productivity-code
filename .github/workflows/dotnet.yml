@@ -53,6 +53,16 @@ jobs:
       with:
         app-name: 'ntxjk7if2hkbi-dev'
         images: $registryName/$repositoryName:$tag
+
+    - uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'ntxjk7if2hkbi-test'
+        images: $registryName/$repositoryName:$tag
+
+    - uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'ntxjk7if2hkbi-prod'
+        images: $registryName/$repositoryName:$tag
     
     - name: Azure logout
       run: |
