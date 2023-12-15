@@ -7,6 +7,7 @@ namespace RazorPagesTestSample.Data
     {
         // testing the CI workflow 3rd time
         // building container image in the workflow.
+        // added needs for deploy
         public int Id { get; set; }
 
         [Required]
