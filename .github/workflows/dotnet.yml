@@ -52,7 +52,7 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-dev'
-        images: '${{ registryName }}/techboost/dotnetcoreapp:${{ github.sha }}'
+        images: '$registryName/$repositoryName:$tag'
     
     - name: Azure logout
       run: |
