@@ -54,17 +54,17 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-dev'
-        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:16
+        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:17
 
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-test'
-        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:16
+        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:17
 
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'ntxjk7if2hkbi-prod'
-        images: $registryName/$repositoryName:$tag
+        images: ntxjk7if2hkbimpnpreg.azurecr.io/techboost/dotnetcoreapp:17
     
     - name: Azure logout
       run: |
