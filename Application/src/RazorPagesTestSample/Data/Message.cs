@@ -5,7 +5,7 @@ namespace RazorPagesTestSample.Data
     #region snippet1
     public class Message
     {
-        // updated registry name in the workflow
+        // push container image to container registry.
         public int Id { get; set; }
 
         [Required]
