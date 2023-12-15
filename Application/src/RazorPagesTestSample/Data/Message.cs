@@ -6,6 +6,7 @@ namespace RazorPagesTestSample.Data
     public class Message
     {
         // testing the CI workflow
+        // testing the CI workflow 2nd time
         public int Id { get; set; }
 
         [Required]
